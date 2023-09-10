@@ -2,9 +2,9 @@
 
 GitHub Liked repos cloner
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/devalv/giclo)](https://goreportcard.com/report/github.com/devalv/giclo)
-[![CodeQL](https://github.com/devalv/giclo/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/devalv/giclo/actions/workflows/codeql-analysis.yml)
-[![codecov](https://codecov.io/gh/devalv/giclo/branch/main/graph/badge.svg)](https://codecov.io/gh/devalv/giclo)
+[![Go Report Card](https://goreportcard.com/badge/github.com/devalv/go-boiler)](https://goreportcard.com/report/github.com/devalv/go-boiler)
+[![CodeQL](https://github.com/devalv/go-boiler/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/devalv/go-boiler/actions/workflows/codeql-analysis.yml)
+[![codecov](https://codecov.io/gh/devalv/go-boiler/branch/main/graph/badge.svg)](https://codecov.io/gh/devalv/go-boiler)
 
 ## Installation
 
