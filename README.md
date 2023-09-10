@@ -1,6 +1,29 @@
-# go-boiler
-Go boilerplate
+# giclo
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/devalv/tag-value-finder)](https://goreportcard.com/report/github.com/devalv/go-boiled)
-[![CodeQL](https://github.com/devalv/tag-value-finder/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/devalv/tag-value-finder/actions/workflows/codeql-analysis.yml)
-[![codecov](https://codecov.io/gh/devalv/tag-value-finder/branch/main/graph/badge.svg?token=APLJUDAV0B)](https://codecov.io/gh/devalv/go-boiled)
+GitHub Liked repos cloner
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/devalv/go-boiler)](https://goreportcard.com/report/github.com/devalv/go-boiler)
+[![CodeQL](https://github.com/devalv/go-boiler/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/devalv/go-boiler/actions/workflows/codeql-analysis.yml)
+[![codecov](https://codecov.io/gh/devalv/go-boiler/branch/main/graph/badge.svg)](https://codecov.io/gh/devalv/go-boiler)
+
+## Installation
+
+1. Make sure that proper version of **Go** installed and ENVs are set.
+
+```bash
+wget https://go.dev/dl/go1.21.1.linux-amd64.tar.gz
+rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz
+# add to .zshrc
+export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"
+```
+
+1. Run **make** command to install all dev-utils.
+
+```bash
+make setup
+```
+
+## Project layout
+
+Directory names and meanings
+<https://github.com/golang-standards/project-layout/blob/master/README_ru.md>
