@@ -27,7 +27,7 @@ repos:
       # StaticCheck
       - id: go-staticcheck-mod
       # StructSlop
-      - id: go-structslop-mod
+      # - id: go-structslop-mod
       # Formatters
       - id: go-fmt
       - id: go-fmt-repo
@@ -43,3 +43,4 @@ repos:
       - id: golangci-lint
       - id: golangci-lint-mod
       - id: golangci-lint-repo-mod
+      # - id: golangci-lint-repo-pkg

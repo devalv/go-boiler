@@ -1,6 +1,7 @@
-module giclo
+// TODO: rename module
+module github.com/devalv/go-boiler
 
-go 1.21
+go 1.23.4
 
 require github.com/rs/zerolog v1.30.0
 

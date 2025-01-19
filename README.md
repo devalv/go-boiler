@@ -1,29 +1,69 @@
-# giclo
+# TODO: should be renaimed
 
-GitHub Liked repos cloner
+<!-- [![Go Report Card](https://goreportcard.com/badge/github.com/devalv/wb-inbox-mail-count)](https://goreportcard.com/report/github.com/devalv/wb-inbox-mail-count) -->
+<!-- [![CodeQL](https://github.com/devalv/wb-inbox-mail-count/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/devalv/wb-inbox-mail-count/actions/workflows/codeql-analysis.yml) -->
+<!-- [![codecov](https://codecov.io/gh/devalv/wb-inbox-mail-count/branch/main/graph/badge.svg)](https://codecov.io/gh/devalv/wb-inbox-mail-count) -->
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/devalv/go-boiler)](https://goreportcard.com/report/github.com/devalv/go-boiler)
-[![CodeQL](https://github.com/devalv/go-boiler/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/devalv/go-boiler/actions/workflows/codeql-analysis.yml)
-[![codecov](https://codecov.io/gh/devalv/go-boiler/branch/main/graph/badge.svg)](https://codecov.io/gh/devalv/go-boiler)
+## TODO: пример работы
+TODO: заполнить
 
-## Installation
+## Установка и конфигурация
+TODO: заполнить
 
-1. Make sure that proper version of **Go** installed and ENVs are set.
+### Установка собранного bin-файла
+TODO: заполнить
 
-```bash
-wget https://go.dev/dl/go1.21.1.linux-amd64.tar.gz
-rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz
-# add to .zshrc
-export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"
+### Содержимое конфигурационного файла приложения (config.yml)
+```
+debug: false
 ```
 
-1. Run **make** command to install all dev-utils.
+## Установка для разработки
+1. Убедитесь, что установлена подходящая версия [Go](https://go.dev/dl/) - **1.23**.
+
+2. Запустите **make** команду для установки утилит разработки.
 
 ```bash
 make setup
 ```
 
-## Project layout
+### Make команды
+- **setup**   - установка утилит для разработки/проверки
+- **fmt**     - запуск gofmt и goimports
+- **test**    - запуск тестов
+- **cover**   - вывод % покрытия тестов
+- **build**   - сборка исполняемого файла
 
-Directory names and meanings
-<https://github.com/golang-standards/project-layout/blob/master/README_ru.md>
+
+## Структура проекта
+```
+go-boiler/
+├── cmd/
+│   └── app/
+│       └── main.go
+├── internal/
+|   ├── app/
+│       └── app.go           // Методы работы с приложением
+|   ├── config/              // Хранение конфигураций для всех частей проекта
+│   │   └── config.go
+|   ├── transport/           // Часть на получение внутри
+│   │   ├── http/
+│   │   ├── grpc/
+│   │   └── messaging/       // Консьюмеры
+|   ├── domain/              // Обобщенные структуры / константы / ошибки
+|   |   ├── models/
+│   │   ├── errors/
+│   │   └── consts/
+|   |       └──consts.go
+|   ├── usecase/             // Бизнес логика
+│   │   └── waybar.go
+```
+
+<!-- ## Сборка deb-пакета -->
+<!-- TODO: актуализировать для v0.2 -->
+
+## TODO v0.2
+- TODO: автоматизировать сборку deb-пакета в github
+- TODO: автоматизировать сборку bin-артефактов в github
+- TODO: тесты
+- TODO: сборка debian-пакета
